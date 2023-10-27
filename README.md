@@ -15,6 +15,30 @@ Lorem ipsulum kkkkkkkkkkkkkkkkkkkkk
 
 
 ## 1. Visão Geral
+O projeto MABEC é um página web para um e-commerce de produtos eletrônicos como computadores, peças de computadores,
+periféricos, notebooks, smartphones, consoles, headsets, etc. 
+O usuário pode criar o seu perfil, navegar por uma vitrine de produtos disponíveis e realizar compras.
+
+No escopo do projeto temos as páginas:
+
+Para cliente:
+- Vitrine de produtos
+- Criação do perfil do usuário
+- Perfil
+- Login
+- Produto
+- Carrinho de compras
+- Confirmação de pedido
+
+Para administrador:
+- Inserir/excluir/alterar produtos
+- Listar produtos
+- Visualizar produtos mais vendidos ou por ID
+- Listar clientes
+- Visualizar cliente por ID
+- Visualizar clientes que compraram X produto
+- Visão geral (metricas) das vendas
+
 
 Visão geral do projeto, um pouco das tecnologias usadas.
 
