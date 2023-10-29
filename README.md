@@ -120,37 +120,7 @@ Diagrama ER da API definindo bem as relações entre as tabelas do banco de dado
 
 ## 5. Contribuidores
 
-<style>
-.contributors {
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
-}
-
-.contributors > a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 145px;
-    width: 90px;
-}
-
-.contributors > a > img{
-    height: 80px;
-    width:80px;
-    border-radius: 50%;
-}
-.contributors > a > p{
-  font-size: 1rem;
-  line-height: 1.2rem;
-  text-align: center;
-}
-
-</style>
-
-<div class="contributors">
+<div>
 <a href="https://github.com/btrz-pm">
 <img width="80px" src="https://avatars.githubusercontent.com/u/119023866?v=4">
 <p>Beatriz P. Machado</p>
