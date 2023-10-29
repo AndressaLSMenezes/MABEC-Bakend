@@ -3,8 +3,10 @@
 ## Tabela de Conteúdos
 
 - [Visão Geral](#1-visão-geral)
-- [Diagrama ER](#2-diagrama-er)
-- [Estrutura do banco de dados](#3-estrutura-do-banco-de-dados)
+- [Funcionalidades](#2-funcionalidades)
+- [Diagrama ER](#3-diagrama-er)
+- [Estrutura do banco de dados](#4-estrutura-do-banco-de-dados)
+- [Contribuidores](#5-contribuidores)
 
 
 ## 1. Visão Geral
@@ -13,7 +15,9 @@ O projeto MABEC é um página web para um e-commerce de produtos eletrônicos co
 periféricos, notebooks, smartphones, consoles, headsets, etc. 
 O usuário pode criar o seu perfil, navegar por uma vitrine de produtos disponíveis e realizar compras.
 
-No escopo do projeto temos as funcionalidades:
+## 2. Funcionalidades
+
+No escopo do projeto temos as páginas:
 
 Para cliente:
 - Vitrine de produtos
@@ -43,7 +47,7 @@ A loja poderá:
 - Emitir nota fiscal
 
 
-## 2. Diagrama ER
+## 3. Diagrama ER
 
 [ Voltar para o topo ](#tabela-de-conteúdos)
 
@@ -52,11 +56,11 @@ Diagrama ER da API definindo bem as relações entre as tabelas do banco de dado
 ![DER](diagram.png)
 
 
-## 3. Estrutura do banco de dados
+## 4. Estrutura do banco de dados
 
 [ Voltar para o topo ](#tabela-de-conteúdos)
 
-- Cliente: 
+- Customer: 
 
   - id: Chave Primaria
   - name: Nome do Cliente
@@ -64,7 +68,7 @@ Diagrama ER da API definindo bem as relações entre as tabelas do banco de dado
   - email: Email Pessoal
   - password: Senha do cliente
 
-- Endereço:
+- Address:
 
   - id: Chave Primaria
   - description: Nome Personalizado do endereço(Ex.: Casa)
@@ -78,7 +82,7 @@ Diagrama ER da API definindo bem as relações entre as tabelas do banco de dado
   - main: Atributo boleano para verificar se é o principal.
   - user_id: Id do usuario.
 
-- Produtos: 
+- Products: 
 
   - id: Chave Primaria
   - name: Nome do produto 
@@ -91,7 +95,7 @@ Diagrama ER da API definindo bem as relações entre as tabelas do banco de dado
   - sale: Preço de promoção. Atributo nulavel. 
   - stock: Qauntidade do Produto Disponivel no estoque.  
 
-- Produtos Adicionados ao carrinho:
+- Products_in_cart:
  
   - id: Chave Primaria
   - customer_id: Id do comprador
@@ -107,9 +111,68 @@ Diagrama ER da API definindo bem as relações entre as tabelas do banco de dado
   - observation: Observação do cliente. Nulavel.
   - shipping_price: Valor do frete.
 
-- Compras_Produtos (Tabela Intermediaria entre Shopping e Product)
+- Shopping_Products (Tabela Intermediaria entre Shopping e Product)
 
   - id: Chave Primaria
   - shopping_id: ID da tabela venda
   - product_id: ID do produto
   - amount: Quantidades
+
+## 5. Contribuidores
+
+<style>
+.contributors {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.contributors > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 145px;
+    width: 90px;
+}
+
+.contributors > a > img{
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+}
+.contributors > a > p{
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+</style>
+
+<div class="contributors">
+<a href="https://github.com/btrz-pm">
+<img width="80px" src="https://avatars.githubusercontent.com/u/119023866?v=4">
+<p>Beatriz P. Machado</p>
+</a>
+
+<a href="https://github.com/Camilafss">
+<img width="80px" src="https://avatars.githubusercontent.com/u/149213167?v=4">
+<p>Camila Fernanda</p>
+</a>
+
+<a href="https://github.com/eltonfelii">
+<img width="80px" src="https://avatars.githubusercontent.com/u/62625745?v=4">
+<p>Elton Vinicius</p>
+</a>
+
+<a href="https://github.com/KarrunaQZ">
+<img width="80px" src="https://avatars.githubusercontent.com/u/130697655?v=4">
+<p>Mariano Queiroz</p>
+</a>
+
+<a href="https://github.com/AndressaLSMenezes">
+<img width="80px" src="https://avatars.githubusercontent.com/u/106389968?v=4">
+<p>Andressa Lopes</p>
+</a>
+</div>
