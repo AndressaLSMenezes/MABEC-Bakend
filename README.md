@@ -13,7 +13,7 @@ O projeto MABEC é um página web para um e-commerce de produtos eletrônicos co
 periféricos, notebooks, smartphones, consoles, headsets, etc. 
 O usuário pode criar o seu perfil, navegar por uma vitrine de produtos disponíveis e realizar compras.
 
-No escopo do projeto temos as páginas:
+No escopo do projeto temos as funcionalidades:
 
 Para cliente:
 - Vitrine de produtos
@@ -24,7 +24,7 @@ Para cliente:
 - Carrinho de compras
 - Confirmação de pedido
 
-Para administrador:
+Para administrador(ou vendedor):
 - Inserir/excluir/alterar produtos
 - Listar produtos
 - Visualizar produtos mais vendidos ou por ID
@@ -32,6 +32,15 @@ Para administrador:
 - Visualizar cliente por ID
 - Visualizar clientes que compraram X produto
 - Visão geral (metricas) das vendas
+
+A loja poderá:
+- Registrar produtos
+- Mostrar vitrine de produtos
+- Permitir pesquisas com diferentes filtros
+- Registrar pedidos
+- Enviar pedidos ao vendedor (ou administrador)
+- Armazenar/alterar e mostrar o estado de cada pedido (Em confirmação, confirmado, em andamento, concluido/entregue)
+- Emitir nota fiscal
 
 
 ## 2. Diagrama ER
